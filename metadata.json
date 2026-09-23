@@ -1,0 +1,6 @@
+{
+  "name": "Үйлөнүү үлпөт & Сүннөт той — Чакыруу",
+  "description": "Болот & Айперинин үйлөнүү үлпөт тоюна жана Алинин сүннөт тоюна арналган санарип чакыруу каты.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
