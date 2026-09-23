@@ -47,8 +47,8 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({ onOpenShare }) => {
           className={`relative w-11 h-11 rounded-full bg-[#07241C]/95 backdrop-blur-md border-2 border-[#D4AF37] text-[#D4AF37] shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 group hover:border-[#F1D779] hover:shadow-[0_0_20px_rgba(212,175,55,0.6)] ${
             isPlaying ? 'pulse-ring-gold border-[#F1D779]' : ''
           }`}
-          title={isPlaying ? 'Музыканы токтотуу' : 'Комуз обонун угуу'}
-          aria-label={isPlaying ? 'Музыканы токтотуу' : 'Комуз обонун угуу'}
+          title={isPlaying ? 'Музыканы токтотуу' : 'Султан Садыралиев - Эки жаш'}
+          aria-label={isPlaying ? 'Музыканы токтотуу' : 'Султан Садыралиев - Эки жаш'}
         >
           {!isPlaying ? (
             <div className="flex items-center justify-center">
