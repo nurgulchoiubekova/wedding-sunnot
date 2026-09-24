@@ -45,9 +45,8 @@ export const EnvelopeScreen: React.FC<EnvelopeScreenProps> = ({ isOpened, onOpen
   return (
     <section
       id="screenEnvelope"
-      className={`relative min-h-[844px] w-full bg-gradient-to-b from-[#0D3B2E] via-[#082820] to-[#041611] flex flex-col items-center justify-between py-12 px-5 overflow-hidden transition-all duration-700 ${
-        isOpened ? 'envelope-opened' : ''
-      }`}
+      className={`relative min-h-[844px] w-full bg-gradient-to-b from-[#0D3B2E] via-[#082820] to-[#041611] flex flex-col items-center justify-between py-12 px-5 overflow-hidden transition-all duration-700 ${isOpened ? 'envelope-opened' : ''
+        }`}
     >
       {/* Golden Dust Particles Canvas */}
       <GoldenDustCanvas />

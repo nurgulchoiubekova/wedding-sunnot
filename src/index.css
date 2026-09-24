@@ -151,13 +151,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom font aliases */
+/* Custom font aliases with full Kyrgyz Cyrillic (Ө, Ү, Ң) support */
 .font-serif {
-  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  font-family: 'PT Serif', 'Lora', Georgia, serif;
 }
 
 .font-cormorant {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', 'PT Serif', Georgia, serif;
 }
 
 .font-script {
@@ -169,5 +169,5 @@ html {
 }
 
 .font-noto {
-  font-family: 'Noto Serif', serif;
+  font-family: 'PT Serif', serif;
 }

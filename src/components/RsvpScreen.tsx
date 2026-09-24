@@ -178,7 +178,7 @@ export const RsvpScreen: React.FC = () => {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Мисалы: Азамат Бакиров"
+                placeholder="Аты-жөнүңүздү жазыңыз"
                 className="w-full px-4 py-3 rounded-xl bg-[#FAF6EE] border border-[#D4AF37]/60 focus:border-[#0D3B2E] focus:ring-2 focus:ring-[#0D3B2E]/30 text-[#2C241E] text-sm outline-none transition-all duration-300 placeholder:text-stone-400 shadow-inner"
               />
             </div>

@@ -31,26 +31,26 @@ export const BlessingScreen: React.FC = () => {
           </svg>
         </div>
 
-        <h3 className="font-serif text-sm font-bold tracking-[0.2em] text-[#0D3B2E] uppercase mb-1">
-          БУЛ КҮН — ҮЙ-БҮЛӨБҮЗ ҮЧҮН ӨЗГӨЧӨ КҮН.
+        <h3 className="font-serif text-sm sm:text-base font-bold tracking-[0.18em] text-[#0D3B2E] uppercase mb-1">
+          БУЛ КҮН ҮЙ БҮЛӨБҮЗ ҮЧҮН ӨЗГӨЧӨ КҮН
         </h3>
 
         <div className="w-20 h-[1.5px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent my-4"></div>
 
         {/* Poetic Kyrgyz Blessing Text */}
-        <div className="space-y-3 font-cormorant text-lg sm:text-xl text-[#2C241E] italic leading-relaxed">
+        <div className="space-y-3 font-cormorant text-xl sm:text-2xl text-[#2C241E] italic leading-relaxed">
           <p>«Ак дасторкондон даам сызып,</p>
           <p>ак баталарыңызды арнап,</p>
           <p>кубанычыбызды тең бөлүшүп,</p>
           <p>бул өзгөчө күндүн</p>
-          <p className="font-semibold text-[#0D3B2E] text-xl">кадырлуу коногу болуңуздар.»</p>
+          <p className="font-bold text-[#0D3B2E] text-2xl sm:text-3xl not-italic mt-1">кадырлуу коногу болуңуздар.»</p>
         </div>
 
         {/* Highlight Accent Box in Champagne Silk with Shimmer */}
         <div className="relative w-full mt-6 p-4 rounded-2xl bg-gradient-to-r from-[#F7F1DF] via-[#FDFBF7] to-[#F7F1DF] border border-[#D4AF37]/70 shadow-sm overflow-hidden group">
           <div className="absolute inset-0 shimmer-effect pointer-events-none opacity-40"></div>
-          <p className="font-serif text-xs text-[#0D3B2E] font-bold tracking-wide uppercase leading-normal">
-            «СИЗДЕРДИН АК БАТАҢЫЗДАР — БИЗ ҮЧҮН ЭҢ ЧОҢ БЕЛЕК.»
+          <p className="font-serif text-xs sm:text-sm text-[#0D3B2E] font-bold tracking-wide uppercase leading-normal">
+            «СИЗДЕРДИН АК БАТАҢЫЗДАР БИЗ ҮЧҮН ЭҢ ЧОҢ БЕЛЕК.»
           </p>
         </div>
 

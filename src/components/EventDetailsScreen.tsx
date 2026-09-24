@@ -229,7 +229,7 @@ export const EventDetailsScreen: React.FC = () => {
           {/* Action Buttons: 2GIS & Copy Address */}
           <div className="mt-4 pt-3 border-t border-[#D4AF37]/30 flex flex-col gap-2">
             <a
-              href="https://2gis.kg/bishkek"
+              href={`https://2gis.kg/bishkek/search/${encodeURIComponent('Ресторан Ырыскы, Фрунзе 160')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-shine w-full py-3 px-4 rounded-full bg-[#0D3B2E] hover:bg-[#124B3C] text-[#F5E6B3] hover:text-white text-xs font-serif font-bold tracking-widest uppercase flex items-center justify-center gap-2 border border-[#D4AF37] shadow-md hover:shadow-[0_0_18px_rgba(212,175,55,0.4)] transition-all duration-300 active:scale-95 group"
@@ -259,7 +259,7 @@ export const EventDetailsScreen: React.FC = () => {
               </button>
 
               <a
-                href="https://maps.google.com/?q=Bishkek+Frunze+160"
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Ресторан Ырыскы, Фрунзе 160, Бишкек')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-2 px-3 rounded-xl bg-white border border-[#D4AF37]/50 text-stone-700 hover:text-[#0D3B2E] text-xs font-medium flex items-center justify-center gap-1 shadow-sm hover:border-[#D4AF37] transition-all"

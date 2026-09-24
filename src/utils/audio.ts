@@ -87,22 +87,35 @@ class WeddingAudioEngine {
     if (!ctx) return;
 
     try {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(140, ctx.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(45, ctx.currentTime + 0.12);
-      gain.gain.setValueAtTime(0.35, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.12);
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-      osc.start();
-      osc.stop(ctx.currentTime + 0.12);
+      // 1. Soft tactile wax seal pop sound
+      const popOsc = ctx.createOscillator();
+      const popGain = ctx.createGain();
+      popOsc.type = 'sine';
+      popOsc.frequency.setValueAtTime(160, ctx.currentTime);
+      popOsc.frequency.exponentialRampToValueAtTime(50, ctx.currentTime + 0.1);
+      popGain.gain.setValueAtTime(0.25, ctx.currentTime);
+      popGain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+      popOsc.connect(popGain);
+      popGain.connect(ctx.destination);
+      popOsc.start();
+      popOsc.stop(ctx.currentTime + 0.1);
 
-      setTimeout(() => this.playPluck(587.33, 0.45, 0.22), 60);
-      setTimeout(() => this.playPluck(880.00, 0.55, 0.25), 180);
-    } catch {
-      // Ignore
+      // 2. Bright & cheerful festive arpeggiated golden chime cascade (D Major Pentatonic Fanfare)
+      const notes = [
+        { freq: 587.33, delay: 40, dur: 0.5, vol: 0.22 },  // D5 - Warm opening pluck
+        { freq: 739.99, delay: 110, dur: 0.5, vol: 0.24 }, // F#5 - Joyful note
+        { freq: 880.00, delay: 180, dur: 0.6, vol: 0.25 }, // A5 - Bright chime
+        { freq: 1174.66, delay: 250, dur: 0.7, vol: 0.28 },// D6 - High sparkle
+        { freq: 1479.98, delay: 330, dur: 0.9, vol: 0.30 },// F#6 - Crystal celebration shimmer
+      ];
+
+      notes.forEach(({ freq, delay, dur, vol }) => {
+        setTimeout(() => {
+          this.playPluck(freq, dur, vol);
+        }, delay);
+      });
+    } catch (e) {
+      console.warn('Envelope sound effect error:', e);
     }
   }
 
