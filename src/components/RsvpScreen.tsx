@@ -228,7 +228,7 @@ export const RsvpScreen: React.FC = () => {
         <h4 className="font-serif text-sm tracking-[0.25em] text-[#F5E6B3] uppercase font-bold">
           ТОЙ ТӨРҮБҮЗДӨ ЖОЛУГУШКАНЧА!
         </h4>
-        <p className="font-cormorant italic text-xs text-white/80 mt-1">
+        <p className="font-cormorant italic text-xs text-white/80 mt-1 notranslate" translate="no">
           Болот &amp; Айпери • Али • Узак &amp; Кымбат
         </p>
         <p className="text-[9px] text-white/40 uppercase tracking-widest mt-3">

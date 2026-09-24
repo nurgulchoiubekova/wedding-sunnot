@@ -107,7 +107,7 @@ export const EnvelopeScreen: React.FC<EnvelopeScreenProps> = ({ isOpened, onOpen
           <p className="font-serif font-bold text-[#0D3B2E] text-sm tracking-widest uppercase">
             Урматтуу конокторубуз
           </p>
-          <p className="font-script text-2xl text-[#997D3D] my-1">Болот &amp; Айпери</p>
+          <p className="font-script text-2xl text-[#997D3D] my-1 notranslate" translate="no">Болот &amp; Айпери</p>
           <div className="w-16 h-[1px] bg-[#D4AF37]/40 my-1"></div>
           <p className="text-[11px] text-stone-600 line-clamp-3 leading-relaxed">
             Үйлөнүү үлпөт жана сүннөт той салтанатына кош келиңиздер!

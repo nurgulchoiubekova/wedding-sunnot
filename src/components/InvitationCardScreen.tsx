@@ -44,7 +44,7 @@ export const InvitationCardScreen: React.FC = () => {
 
         {/* Honorees Announcement 1: Wedding */}
         <div className="mt-4 mb-2">
-          <h2 className="font-script text-4xl sm:text-5xl text-[#0D3B2E] drop-shadow-[0_1px_2px_rgba(13,59,46,0.15)] leading-tight transition-transform hover:scale-[1.02] duration-300">
+          <h2 className="font-script text-4xl sm:text-5xl text-[#0D3B2E] drop-shadow-[0_1px_2px_rgba(13,59,46,0.15)] leading-tight transition-transform hover:scale-[1.02] duration-300 notranslate" translate="no">
             Болот &amp; Айперинин
           </h2>
           <p className="font-serif text-xs uppercase tracking-widest text-[#997D3D] font-semibold mt-1">
@@ -63,7 +63,7 @@ export const InvitationCardScreen: React.FC = () => {
 
         {/* Honorees Announcement 2: Sunnot Toi */}
         <div className="mb-4">
-          <h3 className="font-script text-3xl sm:text-4xl text-[#0D3B2E] leading-tight transition-transform hover:scale-[1.02] duration-300">
+          <h3 className="font-script text-3xl sm:text-4xl text-[#0D3B2E] leading-tight transition-transform hover:scale-[1.02] duration-300 notranslate" translate="no">
             Алинин
           </h3>
           <p className="font-serif text-xs uppercase tracking-widest text-[#997D3D] font-semibold mt-1">

@@ -281,7 +281,7 @@ export const EventDetailsScreen: React.FC = () => {
             <p className="text-[11px] font-serif uppercase tracking-widest text-[#997D3D]">
               Той ээлери:
             </p>
-            <p className="font-script text-3xl text-[#0D3B2E] mt-0.5">Узак &amp; Кымбат</p>
+            <p className="font-script text-3xl text-[#0D3B2E] mt-0.5 notranslate" translate="no">Узак &amp; Кымбат</p>
           </div>
         </div>
 
@@ -290,7 +290,7 @@ export const EventDetailsScreen: React.FC = () => {
           <h4 className="font-serif text-sm tracking-[0.25em] text-[#0D3B2E] uppercase font-bold">
             ТОЙ ТӨРҮБҮЗДӨ ЖОЛУГУШКАНЧА!
           </h4>
-          <p className="font-cormorant italic text-xs text-stone-600 mt-1">
+          <p className="font-cormorant italic text-xs text-stone-600 mt-1 notranslate" translate="no">
             Болот &amp; Айпери • Али • Узак &amp; Кымбат
           </p>
           <p className="text-[9px] text-stone-400 uppercase tracking-widest mt-3">
