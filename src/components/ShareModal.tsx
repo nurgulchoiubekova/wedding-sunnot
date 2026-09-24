@@ -12,7 +12,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-  const shareText = `Урматтуу кадырлуу коноктор! Сиздерди Болот & Айперинин үйлөнүү үлпөт жана Алинин сүннөт тоюна чын жүрөктөн чакырабыз! 📅 21-Октябрь 2026, 16:00. Ресторан «Ырыскы», Бишкек. Санарип чакыруу катын ачуу үчүн шилтемени басыңыз: ${currentUrl}`;
+  const shareText = `Тойго чакыруу: ${currentUrl}`;
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(currentUrl);
