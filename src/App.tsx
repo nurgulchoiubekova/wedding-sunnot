@@ -5,7 +5,6 @@ import { EnvelopeScreen } from './components/EnvelopeScreen';
 import { InvitationCardScreen } from './components/InvitationCardScreen';
 import { BlessingScreen } from './components/BlessingScreen';
 import { EventDetailsScreen } from './components/EventDetailsScreen';
-import { RsvpScreen } from './components/RsvpScreen';
 import { ShareModal } from './components/ShareModal';
 
 export default function App() {
@@ -50,9 +49,6 @@ export default function App() {
 
         {/* Screen 4: Event Date, Location, Calendar & Countdown */}
         <EventDetailsScreen />
-
-        {/* Screen 5: RSVP Form & Congratulations Wall */}
-        <RsvpScreen />
       </div>
 
       {/* Share Modal Dialog */}

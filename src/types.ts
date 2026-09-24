@@ -14,3 +14,9 @@ export interface GuestWish {
   date: string;
   likes: number;
 }
+
+declare global {
+  interface Window {
+    GOOGLE_SHEETS_URL?: string;
+  }
+}

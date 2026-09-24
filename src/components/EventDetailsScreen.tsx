@@ -284,16 +284,19 @@ export const EventDetailsScreen: React.FC = () => {
             <p className="font-script text-3xl text-[#0D3B2E] mt-0.5">Узак &amp; Кымбат</p>
           </div>
         </div>
-      </div>
 
-      {/* Banner Footer Link to RSVP */}
-      <div className="w-full text-center mt-6 py-3 border-t border-[#D4AF37]/40">
-        <a
-          href="#screenRSVP"
-          className="inline-block py-2.5 px-6 rounded-full bg-[#0D3B2E]/10 border border-[#D4AF37] text-[#0D3B2E] font-serif font-bold text-xs uppercase tracking-widest hover:bg-[#0D3B2E]/20 transition-all duration-300 shadow-sm active:scale-95"
-        >
-          Катышууңузду билдириңиз ↓
-        </a>
+        {/* Grand Traditional Kyrgyz Closing Footer */}
+        <footer className="w-full text-center mt-8 pt-6 border-t border-[#D4AF37]/40">
+          <h4 className="font-serif text-sm tracking-[0.25em] text-[#0D3B2E] uppercase font-bold">
+            ТОЙ ТӨРҮБҮЗДӨ ЖОЛУГУШКАНЧА!
+          </h4>
+          <p className="font-cormorant italic text-xs text-stone-600 mt-1">
+            Болот &amp; Айпери • Али • Узак &amp; Кымбат
+          </p>
+          <p className="text-[9px] text-stone-400 uppercase tracking-widest mt-3">
+            Кыргызстан • Бишкек 2026
+          </p>
+        </footer>
       </div>
     </section>
   );
