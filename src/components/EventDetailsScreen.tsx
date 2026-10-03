@@ -42,7 +42,7 @@ export const EventDetailsScreen: React.FC = () => {
   }, [targetDate]);
 
   const handleCopyAddress = () => {
-    const address = 'Бишкек ш., Ресторан «Ырыскы», Фрунзе көчөсү 160 (Орозбеков кесилиши)';
+    const address = 'Бишкек, Новопавловка, Ресторан «Ырыскы», Чүй проспектиси 1060';
     navigator.clipboard.writeText(address);
     setCopied(true);
     setTimeout(() => setCopied(false), 2200);
@@ -54,7 +54,7 @@ export const EventDetailsScreen: React.FC = () => {
     const details = encodeURIComponent(
       'Болот & Айперинин үйлөнүү тою жана Алинин сүннөт тою салтанаты. Той ээлери: Узак & Кымбат'
     );
-    const location = encodeURIComponent('Ресторан Ырыскы, Фрунзе көчөсү 160, Бишкек');
+    const location = encodeURIComponent('Ресторан Ырыскы, Бишкек, Новопавловка, Чүй проспектиси 1060');
     // 2026-10-21 16:00 to 23:00 UTC+6 is 10:00 to 17:00 UTC
     return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261021T100000Z/20261021T170000Z&details=${details}&location=${location}`;
   };
@@ -70,7 +70,6 @@ export const EventDetailsScreen: React.FC = () => {
           <p className="text-xs font-serif tracking-[0.25em] uppercase text-[#997D3D] font-semibold">
             Салтанаттын маалыматы
           </p>
-          <h3 className="font-serif text-2xl font-bold text-[#0D3B2E] mt-1">ТОЙ ДЕТАЛДАРЫ</h3>
           <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mt-2"></div>
         </div>
 
@@ -215,13 +214,13 @@ export const EventDetailsScreen: React.FC = () => {
             </div>
             <div className="flex-1">
               <p className="text-xs uppercase tracking-wider text-stone-500 font-medium">
-                Бишкек шаары
+                Бишкек, Новопавловка
               </p>
               <h5 className="font-serif text-xl font-bold text-[#0D3B2E] mt-0.5">
                 Ресторан «Ырыскы»
               </h5>
               <p className="text-xs text-[#2C241E] mt-1 leading-relaxed">
-                Фрунзе көчөсү 160 (Орозбеков кесилиши)
+                Чүй проспектиси 1060
               </p>
             </div>
           </div>
@@ -229,7 +228,7 @@ export const EventDetailsScreen: React.FC = () => {
           {/* Action Buttons: 2GIS & Copy Address */}
           <div className="mt-4 pt-3 border-t border-[#D4AF37]/30 flex flex-col gap-2">
             <a
-              href={`https://2gis.kg/bishkek/search/${encodeURIComponent('Ресторан Ырыскы, Фрунзе 160')}`}
+              href={`https://2gis.kg/bishkek/search/${encodeURIComponent('Ресторан Ырыскы Новопавловка Чүй проспектиси 1060')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-shine w-full py-3 px-4 rounded-full bg-[#0D3B2E] hover:bg-[#124B3C] text-[#F5E6B3] hover:text-white text-xs font-serif font-bold tracking-widest uppercase flex items-center justify-center gap-2 border border-[#D4AF37] shadow-md hover:shadow-[0_0_18px_rgba(212,175,55,0.4)] transition-all duration-300 active:scale-95 group"
@@ -259,7 +258,7 @@ export const EventDetailsScreen: React.FC = () => {
               </button>
 
               <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Ресторан Ырыскы, Фрунзе 160, Бишкек')}`}
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Ресторан Ырыскы, Новопавловка, Чүй проспектиси 1060, Бишкек')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-2 px-3 rounded-xl bg-white border border-[#D4AF37]/50 text-stone-700 hover:text-[#0D3B2E] text-xs font-medium flex items-center justify-center gap-1 shadow-sm hover:border-[#D4AF37] transition-all"

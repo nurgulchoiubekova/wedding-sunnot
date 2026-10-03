@@ -1,7 +1,6 @@
 import React from 'react';
 
-const WEDDING_ILLUSTRATION_URL =
-  'https://lh3.googleusercontent.com/aida/AEtjO1Ugz8LoLhjyrGF7vkbFV-nvdMkRjvDCJSL5EJzbtBaQNiilchBIiXZhHj3qcEwA0dtMqeyLxB-DdglQi_RA_RxrHZiTq41E_VuRNMG0qocG4QHkJAfYC_7lnKS1sfGE7uQVppNqy2-SdivOFB6a2qjKlLqxFXQB6e98iNAOcOMBf42GIkFWLuJX2PRY1KdGqrnqZK_pbNkp0AEMuHfYWpmWQhksfuw0l3Lm9u2iBI85s7i6Rvj3CvEksA';
+const WEDDING_ILLUSTRATION_URL = '/wedding-illustration.jpg';
 
 export const InvitationCardScreen: React.FC = () => {
   return (
